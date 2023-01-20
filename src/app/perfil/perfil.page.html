@@ -1,9 +1,30 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>perfil</ion-title>
+  <ion-toolbar class="ion-text-center">
+    <h1>
+      Bienvenido
+    </h1>
+    <ion-back-button text="Salir" slot="start"></ion-back-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-card>
+    <img alt="Avatar" src="https://robohash.org/autquiaut.png?size=500x500&set=set1" />
+    <ion-card-header>
+      <ion-button shape="round">Female</ion-button>
+      <ion-card-title>JEANE HALVORSON</ion-card-title>
+      <ion-card-subtitle>KMINCHELLE</ion-card-subtitle>
+      <br>
+      <ion-card-title>Contacto:</ion-card-title>
+      <ion-card-subtitle>kminchelle@qq.com</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-row>
+    <ion-col>
+      <ion-button color="primary" [routerLink]="['/pagina-principal']" expand="block"> Ir a catalogo</ion-button>
+    </ion-col>
+  </ion-row>
 
 </ion-content>
