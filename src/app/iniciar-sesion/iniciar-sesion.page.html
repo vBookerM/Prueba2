@@ -11,7 +11,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-item>
+            <ion-item color="dark">
               <ion-label position="stacked">Usuario</ion-label>
               <ion-input formControlName="username" placeholder="Enter username"></ion-input>
             </ion-item>
@@ -19,7 +19,7 @@
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-item>
+            <ion-item color="dark">
               <ion-label position="stacked">contraseña</ion-label>
               <ion-input formControlName="password"  type="password" placeholder="Ingrese contraseña"></ion-input>
             </ion-item>
@@ -27,7 +27,7 @@
         </ion-row>
         <ion-row>
           <ion-col>
-              <ion-item>
+              <ion-item color="dark">
                 <ion-label>Recuerdame</ion-label>
                 <ion-toggle></ion-toggle>
               </ion-item>
@@ -35,7 +35,7 @@
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-button color="success" expand="full" type="submit" [routerLink]="['/perfil']" [disabled]="labPrueba.obtenerDatos()">Iniciar Sesion</ion-button>
+            <ion-button color="primary" expand="block" type="submit" [routerLink]="['/perfil']" [disabled]="labPrueba.obtenerDatos()">Iniciar Sesion</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
