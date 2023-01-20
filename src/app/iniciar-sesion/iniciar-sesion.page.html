@@ -1,0 +1,43 @@
+  <ion-content color="medium">
+    <br>
+    <div>
+      <img src="https://assets.stickpng.com/images/58481842cef1014c0b5e49a2.png" alt="">
+      <h1 class="ion-text-center">
+        Bienvenido
+      </h1>
+    </div>
+
+    <form action="POST" [formGroup]="formulario" (ngSubmit)="submitForm()">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="stacked">Usuario</ion-label>
+              <ion-input formControlName="username" placeholder="Enter username"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="stacked">contraseña</ion-label>
+              <ion-input formControlName="password"  type="password" placeholder="Ingrese contraseña"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+              <ion-item>
+                <ion-label>Recuerdame</ion-label>
+                <ion-toggle></ion-toggle>
+              </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button color="success" expand="full" type="submit" [routerLink]="['/perfil']" [disabled]="labPrueba.obtenerDatos()">Iniciar Sesion</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-content>
